@@ -37,9 +37,11 @@
 
         <style>
             :root {
-                --accent: #ff7e5f;
+                --accent: #dc378e;
                 --dark: #000000;
-                --light: #eeeeee;
+                --light: #dce6e6;
+                /* --light: #eeeeee; */
+
             }
 
             * {
@@ -99,10 +101,22 @@
                 position: relative;
             }
 
+            .subtitle {
+                font-size: 2rem;
+                font-weight: 350;
+                margin-bottom: 0.5rem;
+                background: var(--light);;
+                -webkit-background-clip: text;
+                background-clip: text;
+                color: transparent;
+                position: relative;
+
+            }            
+
             .tagline {
                 font-size: 1.5rem;
                 margin-bottom: 3rem;
-                max-width: 700px;
+                max-width: 1200px;
                 line-height: 1.6;
                 font-weight: 300;
                 position: relative;
@@ -111,18 +125,18 @@
             .tagline::before, .tagline::after {
                 content: '"';
                 color: var(--accent);
-                font-size: 2rem;
+                font-size: 4rem;
                 position: absolute;
             }
 
             .tagline::before {
-                top: -15px;
-                left: -20px;
+                top: -40px;
+                left: -10px;
             }
 
             .tagline::after {
-                bottom: -25px;
-                right: -20px;
+                bottom: -40px;
+                right: 40px;
             }
 
             .links {
@@ -145,6 +159,22 @@
                 transition: all 0.3s ease;
                 overflow: hidden;
                 z-index: 1;
+            }
+
+            .bodytxt {
+                position: relative;
+                padding: 1rem 2rem;
+                border-radius: 5px;
+                font-weight: 200;
+                text-decoration: none;
+                color: var(--light);
+                background: rgba(255, 255, 255, 0);
+                backdrop-filter: blur(10px);
+                border: 1px solid rgba(255, 255, 255, 0.1);
+                transition: all 0.3s ease;
+                overflow: hidden;
+                z-index: 1;                
+
             }
 
             .link:hover {
@@ -193,13 +223,16 @@
 
             <h1 class="title">Immercity, LLC</h1>
 
-            <p class="tagline">Immercity began as a pioneering AR/XR company, founded by two seasoned software development veterans. The original Immercity was sold, marking a significant shift. Here's what's next.</p>
+            <p class="tagline">Immercity began as a pioneering AR/XR company, founded by two seasoned software development veterans. The original Immercity was sold, demanding a significant pivot. Here's what's next.</p>
 
-<p class="link">Now, Immercity operates as a dynamic holding and consulting agency, poised to nurture future software, project management, and innovative technology ventures. We are focused on strategic growth and delivering impactful solutions in the evolving tech landscape.
-<br></br>
-Immercity also offers comprehensive corp-to-corp project management consulting services, tailored specifically for dynamic SaaS teams. Leveraging extensive experience in delivering complex software initiatives, we streamline your operations, ensuring projects remain on schedule and within budget. Our expertise spans agile project management, risk mitigation, and optimizing resource allocation to enhance overall efficiency. We excel in managing multidisciplinary teams and navigating stakeholder engagements, providing seamless project execution from conception to completion.
-<br></br>
-Beyond project oversight, Immercity also provides targeted digital marketing services designed to elevate your SaaS brand. From crafting impactful go-to-market strategies to executing data-driven content and social media campaigns, we drive engagement and expand market reach. Our focus is on scalable solutions that deliver measurable results, ensuring your marketing efforts align perfectly with your business objectives. We aim to act as an embedded extension of your team, providing strategic guidance and hands-on execution.</p>
+<p class="bodytxt">Now, Immercity operates as a dynamic holding company and consulting agency, poised to generate future software, project management, and innovative technology solutions. We are focused on strategic growth and delivering impactful solutions in the evolving tech landscape.</p>
+<br><br>
+            <h2 class="subtitle">Project Management</h1>
+<p class="bodytxt">Immercity offers comprehensive corp-to-corp project management consulting services, tailored specifically for dynamic SaaS teams. Leveraging extensive experience in delivering complex software initiatives, we streamline your operations, ensuring projects remain on schedule and within budget. Our expertise spans agile project management, risk mitigation, and optimizing resource allocation to enhance overall efficiency. We excel in managing multidisciplinary teams and navigating stakeholder engagements, providing seamless project execution from conception to completion.</p>
+<br><br>
+            <h2 class="subtitle">Marketing</h1>
+
+<p class="bodytxt">Immercity also provides targeted digital marketing services designed to elevate your SaaS brand. From crafting impactful go-to-market strategies to executing data-driven content and social media campaigns, we drive engagement and expand market reach. Our focus is on scalable solutions that deliver measurable results, ensuring your marketing efforts align perfectly with your business objectives. We aim to act as an embedded extension of your team, providing strategic guidance and hands-on execution.</p>
         <!--    <div class="links">
                 <a href="https://Immercity" class="link" target="_blank"></a>
             </div>
@@ -214,14 +247,14 @@ Beyond project oversight, Immercity also provides targeted digital marketing ser
             particlesJS("particles-js", {
                 "particles": {
                     "number": {
-                        "value": 150,
+                        "value": 100,
                         "density": {
                             "enable": true,
                             "value_area": 800
                         }
                     },
                     "opacity": {
-                        "value": 0.5,
+                        "value": 0.2,
                         "random": true,
                         "anim": {
                             "enable": true,
@@ -231,7 +264,7 @@ Beyond project oversight, Immercity also provides targeted digital marketing ser
                         }
                     },
                     "size": {
-                        "value": 2,
+                        "value": 3,
                         "random": true,
                         "anim": {
                             "enable": true,
@@ -243,8 +276,8 @@ Beyond project oversight, Immercity also provides targeted digital marketing ser
                     "line_linked": {
                         "enable": true,
                         "distance": 150,
-                        "color": "#676573",
-                        "opacity": 0.3,
+                        "color": "#dc378e",
+                        "opacity": 0.2,
                         "width": 1
                     },
                 },
