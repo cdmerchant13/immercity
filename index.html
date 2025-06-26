@@ -3,36 +3,31 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Immercity</title>
-        <meta name="description" content="Immercity was previously the multinational XR/AI software agency. Now we build and nurture software, project management, and innovative technology ventures.">
+        <title>Immercity, LLC</title>
+        <meta name="description" content="Immercity is the contract software project management and innovative marketing agency.">
         <meta name="theme-color" content="#000000" />
         <link rel="canonical" href="https://immercity.xyz/">
 
-        <!-- Favicons -->
         <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
         <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
         <link rel="manifest" href="/site.webmanifest">
 
-        <!-- Fonts -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Roboto+Mono:wght@300;400;500&display=swap" rel="stylesheet">
 
-        <!-- Facebook meta tags -->
-        <meta property="og:title" content="Immercity">
+        <meta property="og:title" content="Immercity, LLC">
         <meta property="og:locale" content="en">
         <meta property="og:url" content="https://immercity.xyz/">
         <meta property="og:site_name" content="Immercity, LLC">
 
-        <!-- Twitter meta tags -->
-        <meta name="twitter:title" content="Immercity">
+        <meta name="twitter:title" content="Immercity, LLC">
         <meta name="twitter:domain" content="Immercity.xyz">
 
-        <!-- Particle.js -->
         <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
 
-        <!-- Umami analytics -->
+        <!-- Umami  -->
         <script defer src="https://umami.117820.xyz/script.js" data-website-id="642fb44d-65cd-4678-9198-e787318c333c"></script>
 
         <style>
@@ -42,6 +37,45 @@
                 --light: #dce6e6;
                 /* --light: #eeeeee; */
 
+            }
+            .navbar {
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                background: rgba(255, 255, 255, 0); /* Transparent background */
+                backdrop-filter: blur(10px); /* Add blur effect */
+                border-bottom: 1px solid rgba(255, 255, 255, 0.1); /* Subtle bottom border */
+                padding: 0.5rem 2rem; /* Add padding */
+                z-index: 2; /* Ensure it's above other content */
+            }
+
+            .navbar-links {
+                display: flex;
+                gap: 2rem;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            .navbar-link {
+                position: relative;
+                padding: .5rem 2rem;
+                border-radius: 5px;
+                font-weight: 500;
+                text-decoration: none;
+                color: var(--light);
+                background: rgba(255, 255, 255, 0);
+                backdrop-filter: blur(10px);
+                border: 1px solid rgba(255, 255, 255, 0.1);
+                transition: all 0.3s ease;
+                overflow: hidden;
+                z-index: 1;
+            }
+
+            .navbar-link:hover {
+                transform: translateY(-2px);
+                box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+                background: rgba(255, 255, 255, 0.1);
             }
 
             * {
@@ -148,7 +182,7 @@
 
             .link {
                 position: relative;
-                padding: 1rem 2rem;
+                padding: .5rem 2rem;
                 border-radius: 5px;
                 font-weight: 500;
                 text-decoration: none;
@@ -170,7 +204,7 @@
                 color: var(--light);
                 background: rgba(255, 255, 255, 0);
                 backdrop-filter: blur(10px);
-                border: 1px solid rgba(255, 255, 255, 0.1);
+                border: 1px solid #dc378e;
                 transition: all 0.3s ease;
                 overflow: hidden;
                 z-index: 1;                
@@ -215,34 +249,47 @@
         <!-- Background particles -->
         <div id="particles-js"></div>
 
+        <div class="navbar">
+            <div class="navbar-links">
+                <a href="index.html" class="navbar-link">Home</a>
+                <a href="#" class="navbar-link">About</a>
+                <a href="#" class="navbar-link">Services</a>
+                <a href="mailto:replacethiswithchris@immercity.xyz" class="navbar-link" onclick="return constructEmail('chris@immercity.xyz');">Contact</a>
+            </div>
+         </div>
+
         <!-- Main content -->
         <div class="container">
             <div class="logo-container">
                 <img src="./logo.png" alt="Immercity Logo" class="logo">
             </div>
-
-            <h1 class="title">Immercity, LLC</h1>
-
+        <h1 class="title">Immercity, LLC</h1>
             <p class="tagline">Immercity began as a pioneering AR/XR company, founded by two seasoned software development veterans. The original Immercity was sold, demanding a significant pivot. Here's what's next.</p>
+            <p class="bodytxt">Now, Immercity operates as a dynamic holding company and consulting agency, poised to generate future software, project management, and innovative technology solutions. We are focused on strategic growth and delivering impactful solutions in the evolving tech landscape.</p>
+                <br><br>
+        <h2 class="subtitle">Project Management</h1>
+            <p class="bodytxt">Immercity offers comprehensive corp-to-corp project management consulting services, tailored specifically for dynamic SaaS teams. Leveraging extensive experience in delivering complex software initiatives, we streamline your operations, ensuring projects remain on schedule and within budget. Our expertise spans agile project management, risk mitigation, and optimizing resource allocation to enhance overall efficiency. We excel in managing multidisciplinary teams and navigating stakeholder engagements, providing seamless project execution from conception to completion.</p>
+                <br><br>
+        <h2 class="subtitle">Marketing</h1>
+            <p class="bodytxt">Immercity also provides targeted digital marketing services designed to elevate your SaaS brand. From crafting impactful go-to-market strategies to executing data-driven content and social media campaigns, we drive engagement and expand market reach. Our focus is on scalable solutions that deliver measurable results, ensuring your marketing efforts align perfectly with your business objectives. We aim to act as an embedded extension of your team, providing strategic guidance and hands-on execution.</p>
+                <br><br>
+        <div class="links">
+                <a href="https://061191.xyz" class="link" target="_blank">Christopher Merchant II</a>
+                <a href="https://linkedin.com/company/immercity" class="link" target="_blank">Immercity @ LinkedIn</a>
+        </div>
 
-<p class="bodytxt">Now, Immercity operates as a dynamic holding company and consulting agency, poised to generate future software, project management, and innovative technology solutions. We are focused on strategic growth and delivering impactful solutions in the evolving tech landscape.</p>
-<br><br>
-            <h2 class="subtitle">Project Management</h1>
-<p class="bodytxt">Immercity offers comprehensive corp-to-corp project management consulting services, tailored specifically for dynamic SaaS teams. Leveraging extensive experience in delivering complex software initiatives, we streamline your operations, ensuring projects remain on schedule and within budget. Our expertise spans agile project management, risk mitigation, and optimizing resource allocation to enhance overall efficiency. We excel in managing multidisciplinary teams and navigating stakeholder engagements, providing seamless project execution from conception to completion.</p>
-<br><br>
-            <h2 class="subtitle">Marketing</h1>
-
-<p class="bodytxt">Immercity also provides targeted digital marketing services designed to elevate your SaaS brand. From crafting impactful go-to-market strategies to executing data-driven content and social media campaigns, we drive engagement and expand market reach. Our focus is on scalable solutions that deliver measurable results, ensuring your marketing efforts align perfectly with your business objectives. We aim to act as an embedded extension of your team, providing strategic guidance and hands-on execution.</p>
-        <!--    <div class="links">
-                <a href="https://Immercity" class="link" target="_blank"></a>
-            </div>
-        -->
             <div class="footer">
                 © Immercity, LLC 2025. All Rights Reserved.
             </div>
+
         </div>
 
         <script>
+
+                function constructEmail(email) {
+                    window.location.href = 'mailto:' + email;
+                    return false; // Prevent the default link behavior
+                    }
             // Initialize particle.js
             particlesJS("particles-js", {
                 "particles": {
